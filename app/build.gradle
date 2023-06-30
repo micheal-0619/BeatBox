@@ -31,6 +31,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile.class) {
+        kotlinOptions {
+            jvmTarget = "1.8"
+        }
+    }
+
     //数据绑定
     dataBinding {
         enabled = true

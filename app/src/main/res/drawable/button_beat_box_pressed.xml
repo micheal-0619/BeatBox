@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--layer list drawable能让两个XML drawable合二为一。 借助这个工具， 可以为按下状态的按钮添加一个深色的圆环-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/red" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke
+                android:width="4dp"
+                android:color="@color/dark_red" />
+        </shape>
+    </item>
+</layer-list>
